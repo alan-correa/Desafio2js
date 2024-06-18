@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #36FCC1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 8px solid white;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opcion {
+    margin: 0 20px;
+}
+
+.opcion label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.links a {
+    color: white;
+    background-color: #345272;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

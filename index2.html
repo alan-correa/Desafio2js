@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Puedes elegir hasta 10 Stickers</h1>
+    </div>
+    <div class="box">
+        <div class="col">
+           <div class="card">
+             <img src="./assets/img/piplup.png" class="img" alt="Piplup">
+             <div class="card-body">
+               <h5 class="card-title">Piplup</h5>
+             </div>
+             <input id="sticker1" value="" type="number" class="form-control" />
+           </div>
+        </div>
+        <div class="col">
+           <div class="card">
+             <img src="./assets/img/Chimchar.png" class="img" alt="Chimchar">
+             <div class="card-body">
+               <h5 class="card-title">Chimchar</h5>
+             </div>
+             <input id="sticker2" value="" type="number" class="form-control" />
+           </div>
+        </div>
+        <div class="col">
+           <div class="card">
+             <img src="./assets/img/turtwig.png" class="img" alt="Turtwig">
+             <div class="card-body">
+               <h5 class="card-title">Turtwig</h5>
+             </div>
+             <input id="sticker3" value="" type="number" class="form-control" />
+           </div>
+        </div>
+    </div>
+    <div class="button">
+         <button type="button" class="btn" id="verificar"
+           onclick="
+             let sticker1 = Number(document.querySelector('#sticker1').value);
+             let sticker2 = Number(document.querySelector('#sticker2').value);
+             let sticker3 = Number(document.querySelector('#sticker3').value);
+ 
+             let suma = sticker1 + sticker2 + sticker3;
+ 
+             if (suma <= 10){
+              mensaje.innerHTML = '¡Llevas ' + suma + ' stickers!';
+              mensaje.style.color = '#1a1a1a'; /* Negro */
+             } else {
+               mensaje.innerHTML = '¡Llevas demasiados Stickers!';
+               mensaje.style.color = '#ff0000'; /* Rojo */
+             }">
+           Verificar
+         </button>
+         <p id="mensaje"></p>
+    </div>
+       <div class="links">
+         <a href="./index.html" id="prev"> Anterior</a>
+         <a href="./index3.html" id="next"> Siguiente</a>
+       </div>
+     <script src="./assets/js/js2.js"></script>
+ </body>
+ </html>

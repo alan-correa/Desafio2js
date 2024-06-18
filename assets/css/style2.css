@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: #36FCC1;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+.col {
+    max-width: 400px;
+}
+
+.card {
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #ddd;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #000;
+}
+
+.form-control {
+    width: calc(100% - 2rem);
+    margin: 0 1rem 1rem 1rem;
+    padding: 2px;
+    border-radius: 15%;
+    border: 3px solid #ccc;
+    font-size: 16px;
+}
+
+.text {
+    font-family: "Nunito", sans-serif;
+    color: rgba(10, 10, 10, 0.973);
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+}
+
+.boton {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.btn {
+    color: white;
+    background-color: #345272;
+    padding: 10px 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.links a {
+    color: white;
+    background-color: #345272;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#mensaje {
+    margin-top: 2vh;
+    font-size: 36px;
+    text-align: center;
+}
